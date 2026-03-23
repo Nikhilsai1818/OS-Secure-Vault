@@ -1,0 +1,15 @@
+# OS-Level Secure File Management System — Python Dependencies
+
+# Cryptography
+cryptography>=42.0.0       # AES-256-GCM, PBKDF2-HMAC — uses os.urandom() for entropy
+bcrypt>=4.1.0              # Adaptive password hashing (replaces plain SHA in old web app)
+
+# 2FA / TOTP
+pyotp>=2.9.0               # RFC 6238 TOTP — uses os.urandom() for secret generation
+qrcode>=7.4.2              # QR code generation for 2FA setup (CLI display)
+
+# Terminal UI
+colorama>=0.4.6            # Cross-platform ANSI terminal colors (Windows fix)
+
+# Testing
+pytest>=8.0.0              # Test runner
